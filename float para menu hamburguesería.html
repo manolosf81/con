@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <stylessssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss>
+/*añado el main para ogligar que flote hasta el top de main*/
+        main{
+        margin-top: 50px;
+        border: 5px solid black;
+        overflow: auto;}
+
+p{
+    float:left;
+    font-size: 30px;
+   /*por este margen no flota hasta la linea porque tiene ese margen*/
+    margin:20px;
+    background-color: blueviolet;
+    border-left: 3px;
+    
+}
+/*lo utilizao para hacedr que uno de ellos sea distinto y flote a la derecha*/
+p.derecha
+{
+    float:right;
+    background-color: rgb(109, 212, 13);
+    border-left: 3px;
+}
+
+p.abajoizquierda
+
+{
+    float:left;
+    clear:both;
+    background-color: rgb(109, 212, 13);
+    border-left: 3px;
+}
+
+p.abajoderecha
+
+{
+    float:left;
+    clear:left;
+    background-color: rgb(109, 212, 13);
+    border-left: 3px;
+}
+
+
+
+
+
+    </stylessssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss>
+</head>
+<body>
+
+<main>
+    <p>p1</p>
+    <p class="derecha">p2</p>
+    <p class="abajoizquierda">p3</p>   
+    <p class="abajoderecha">p4</p>  
+
+<!--el nav se pone pone entre p3 y p2 porque los float salen de la linea temporal como absolute y por tanto va detrás justo del último elemento
+fíjate que aunque ensanche hasta que no ensanche lo suficiente que haya un espacio grande hola y hola2 no suben porque los párrafos tienen un margen de 20 cada uno-->
+    
+
+</main>
+    
+</body>
+</html>
